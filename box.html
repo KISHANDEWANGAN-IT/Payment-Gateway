@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donation</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: cursive;
+      background-color: white;
+      background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url(images/logo10.jpg) no-repeat;
+      background-size: cover;
+      height: 100vh;
+    }
+    .right-rect-box .rect-box {
+      width: 40%;
+      height: 325px;
+      background-color: wheat;
+      margin: 10% 60% 0 57%;
+      padding: 10px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 10px 10px 5px grey;
+    }
+
+    .right-rect-box .rect-box .heading-topic {
+      font-size: 25px;
+      font-weight: 800;
+    }
+    .right-rect-box .rect-box .btn{
+      
+  border-radius: 4px;
+  background-color: #18da21;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+  padding: 16px;
+  width: 220px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 36px;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+}
+
+.btn{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;  
+  top: 14px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn:hover{
+  padding-right: 24px;
+  padding-left:8px;
+}
+
+.btn:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+.btn a{
+  color: #fff;
+  text-decoration: none;
+}
+    
+  </style>
+  <body>
+    <section class="right-rect-box">
+      <div class="rect-box">
+        <p class="heading-topic">Please proceed for payment...</p>
+        <div class="gateway-RazorPay">
+          <p style="color: rgb(209, 33, 33)">Using RazorPay Gateway</p>
+
+          <button class="btn"><a href=https://pages.razorpay.com/pl_Jmt1giBmdK5EzJ/view>Pay</a></button>
+          
+        </div>
+      </div>
+    </section>
+    
+  </body>
+</html>
